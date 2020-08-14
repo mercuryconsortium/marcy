@@ -1,16 +1,17 @@
 ***************
 System Overview
 ***************
-Marcy has 26 compute nodes grouped into queues based on their hardware configuration. Users
-connect to Marcy by logging into account on the login node via `SSH <https://www.ssh.com>`_. Jobs
+Marcy has 26 compute nodes grouped into queues based on their hardware configuration. Each node
+runs on a Linux operating system. Users 
+connect to Marcy by logging into their account on the login node via `SSH <https://www.ssh.com>`_. Jobs
 are submitted from the login node via `PBS <https://www.openpbs.org>`_ to the compute nodes.
-The cluster's file system is located on the storage node in a large RAID array of hard
-disks.
+The cluster's file system is located on the storage node in a large `RAID <https://en.wikipedia.org/wiki/RAID>`_
+array of hard disks.
 
 Login Node
 ==========
-Users connect to Marcy by logging into the login node using `SSH <https://www.ssh.org>`_. This
-interactive session runs on the `TCSH <https://www.tcsh.org>`_ shell.
+Users connect to Marcy by logging into the login node. This starts an
+interactive session running on the `TCSH <https://www.tcsh.org>`_ shell.
 
   ===================== ================================
   master                ``master``
