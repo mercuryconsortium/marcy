@@ -12,6 +12,11 @@ Introduction
 Marcy is one of the `Molecular Education and Research Consortium in Undergraduate Computational
 Chemistry <https://mercuryconsortium.org>`_ high-performance computing clusters (HPCs).
 
+System Overview
+===============
+Marcy has 26 compute nodes, each of which has two Intel Broadwell E5-2660 8-core CPUs for a total
+of 16 cores per node.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents
