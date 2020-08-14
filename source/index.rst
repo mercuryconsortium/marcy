@@ -7,6 +7,8 @@
 Marcy User Guide
 ################
 
+This documentation describes Marcy.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents
