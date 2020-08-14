@@ -10,9 +10,11 @@ SSH on Mac OS X and UNIX
 ========================
 Open a command line terminal application on your local computer (``localhost``) and
 use the ``ssh`` command.
+
 .. code-block:: bash
    
    localhost$ ssh username@marcy.furman.edu
+
 
 SSH on Windows
 ==============
