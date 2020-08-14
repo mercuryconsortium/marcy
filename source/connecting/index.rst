@@ -5,6 +5,7 @@ Users connect to Marcy through a command line terminal using the `Secure Shell <
 protocol. This works differently on different operating systems, so we provide instructions for the
 two most common operating systems. 
 
+
 .. toctree::
    :maxdepth: 4
    :caption: Contents

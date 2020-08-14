@@ -113,6 +113,7 @@ CUDA
   Number of CUDA cores  2496
   ===================== ================================
 
+
 .. toctree::
    :maxdepth: 4
    :caption: Contents
