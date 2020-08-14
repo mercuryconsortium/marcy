@@ -8,17 +8,21 @@ for the two most common cases are presented below.
 
 SSH on Mac OS X and UNIX
 ========================
-The most direct method is to connect directly from a command line terminal on a
-Mac OS X or UNIX computer. This is because Marcy operates the `CentOS 6 <https://www.centos.org>`_
-UNIX operating system through a command line interface. Mac OS is built on UNIX, so has the command
-line terminal software built in. So, user with the account ``username`` working from a personal
-computer ``localhost`` can connect to Marcy using the command
-
+Open a command line terminal application on your local computer (``localhost``) and
+use the ``ssh`` command.
 .. code-block:: bash
 
    localhost$ ssh username@marcy.furman.edu
 
-and entering their MERCURY HPC account password at the prompt.
+SSH on Windows
+==============
+Windows users must use a secure shell client. `PuTTY <https://putty.org>`_ is the recommended
+program for this task, so we will this program in the instructions below.
+
+Download and install `PuTTY <https://putty.org>`_ on your local computer (``localhost``). Open
+a new SSH connection and edit the prompt accordingly. Enter ``marcy.furman.edu`` in the 
+`Host Name` box and click `Open`. A command line terminal will open and ask for your account
+credentials. Enter your username and password to gain access to Marcy.
 
 .. toctree::
    :maxdepth: 2
