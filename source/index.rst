@@ -68,8 +68,6 @@ Marcy has 26 compute nodes grouped into the following queues based on the hardwa
    Disk space per node   1 TB
    ===================== ================================
 
-Big Nodes
----------
 .. table:: Big Nodes
    :caption: inode[1-8]
 
@@ -83,8 +81,6 @@ Big Nodes
    Disk space per node   2 TB
    ===================== ================================
 
-GPU Node
---------
 .. table:: GPU Node
    :caption: inode[22]
 
