@@ -10,6 +10,7 @@ Marcy User Guide
 .. toctree::
    :maxdepth: 2
    :caption: Contents
-   
+   :numbered:
+
    introduction
    system-overview
