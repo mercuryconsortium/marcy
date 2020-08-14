@@ -18,15 +18,15 @@ Marcy has 26 compute nodes grouped into the following queues based on the hardwa
 
 .. table:: Login Node
 
-   ========== ==================================
-   Processors Intel Broadwell E5-2660 2.20 GHz
-   Number of processors 2
+   ===================== ================================
+   Processors            Intel Broadwell E5-2660 2.20 GHz
+   Number of processors  2
    Threads per processor 8
-   Threads per node 16
-   Memory per processor 4 GB
-   Memory per node 64 GB
-   Disk space per node 2 TB
-   ==== ===================   
+   Threads per node      16
+   Memory per processor  4 GB
+   Memory per node       64 GB
+   Disk space per node   2 TB
+   ===================== ================================
 
 .. toctree::
    :maxdepth: 2
