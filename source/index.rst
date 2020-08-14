@@ -7,7 +7,8 @@
 Marcy User Guide
 ################
 
-This documentation describes Marcy.
+This documentation provides a guide for the users of Marcy, a high-performance computing cluster (HPC)
+hosted by the Molecular Education and Research Consortium in Undergraduate Computational Chemistry (MERCURY).
 
 .. toctree::
    :maxdepth: 2
@@ -16,3 +17,4 @@ This documentation describes Marcy.
 
    introduction
    system-overview
+   connecting
