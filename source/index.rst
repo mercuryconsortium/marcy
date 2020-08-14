@@ -20,102 +20,79 @@ are submitted from the login node via `PBS <https://www.openpbs.org>`_ to the co
 The cluster's file system is located on the storage node in a large RAID array of hard
 disks.
 
-Login Node
-----------
-   
-   ===================== ================================
-   Attribute             Value
-   ===================== ================================
-   Processors            Intel Broadwell E5-2660 2.20 GHz
-   Number of processors  2
-   Threads per processor 8
-   Threads per node      16
-   Memory per processor  4 GB
-   Memory per node       64 GB
-   Disk space per node   2 TB
-   ===================== ================================
+===================== ================================
+Login Node            master
+===================== ================================
+Processors            Intel Broadwell E5-2660 2.20 GHz
+Number of processors  2
+Threads per processor 8
+Threads per node      16
+Memory per processor  4 GB
+Memory per node       64 GB
+Disk space per node   2 TB
+===================== ================================
 
-Storage Node
-------------
+===================== ================================
+Storage Node          io
+===================== ================================
+Processors            Intel Broadwell E5-2660 2.20 GHz
+Number of processors  2
+Threads per processor 8
+Threads per node      16
+Memory per processor  4 GB
+Memory per node       64 GB
+Disk space per node   20 TB
+===================== ================================
 
-.. table:: Storage Node
-   :caption: io
+===================== ================================
+Small Nodes           inode[9-21]
+===================== ================================
+Processors            Intel Broadwell E5-2660 2.20 GHz
+Number of processors  2
+Threads per processor 8
+Threads per node      16
+Memory per processor  2 GB
+Memory per node       32 GB
+Disk space per node   1 TB
+===================== ================================
 
-   ===================== ================================
-   Processors            Intel Broadwell E5-2660 2.20 GHz
-   Number of processors  2
-   Threads per processor 8
-   Threads per node      16
-   Memory per processor  4 GB
-   Memory per node       64 GB
-   Disk space per node   20 TB
-   ===================== ================================
+===================== ================================
+Medium Nodes          inode[21,23-26]
+===================== ================================
+Processors            Intel Broadwell E5-2660 2.20 GHz
+Number of processors  2
+Threads per processor 8
+Threads per node      16
+Memory per processor  4 GB
+Memory per node       64 GB
+Disk space per node   1 TB
+===================== ================================
 
-Small Nodes
------------
+===================== ================================
+Big Nodes             inode[1-8]
+===================== ================================
+Processors            Intel Broadwell E5-2660 2.20 GHz
+Number of processors  2
+Threads per processor 8
+Threads per node      16
+Memory per processor  8 GB
+Memory per node       128 GB
+Disk space per node   2 TB
+===================== ================================
 
-.. table:: Small Nodes
-   :caption: inode[9-20]
-
-   ===================== ================================
-   Processors            Intel Broadwell E5-2660 2.20 GHz
-   Number of processors  2
-   Threads per processor 8
-   Threads per node      16
-   Memory per processor  2 GB
-   Memory per node       32 GB
-   Disk space per node   1 TB
-   ===================== ================================
-
-Medium Nodes
-------------
-
-.. table:: Medium Nodes
-   :caption: inode[21,23-26]
-
-   ===================== ================================
-   Processors            Intel Broadwell E5-2660 2.20 GHz
-   Number of processors  2
-   Threads per processor 8
-   Threads per node      16
-   Memory per processor  4 GB
-   Memory per node       64 GB
-   Disk space per node   1 TB
-   ===================== ================================
-
-Large Nodes
------------
-
-.. table:: Big Nodes
-   :caption: inode[1-8]
-
-   ===================== ================================
-   Processors            Intel Broadwell E5-2660 2.20 GHz
-   Number of processors  2
-   Threads per processor 8
-   Threads per node      16
-   Memory per processor  8 GB
-   Memory per node       128 GB
-   Disk space per node   2 TB
-   ===================== ================================
-
-GPU Node
---------
-
-.. table:: GPU Node
-   :caption: inode[22]
-
-   ===================== ================================
-   Processors            Intel Broadwell E5-2660 2.20 GHz
-   Number of processors  2
-   Threads per processor 8
-   Threads per node      16
-   Memory per processor  2 GB
-   Memory per node       32 GB
-   Disk space per node   1 TB
-   Graphics cards        NVIDIA Tesla K20
-   Number of CUDA cores  2496
-   ===================== ================================
+===================== ================================
+GPU Node              inode[22]
+===================== ================================
+Processors            Intel Broadwell E5-2660 2.20 GHz
+Number of processors  2
+Threads per processor 8
+Threads per node      16
+Memory per processor  2 GB
+Memory per node       32 GB
+Disk space per node   1 TB
+Graphics cards        NVIDIA Tesla K20
+Number of CUDA cores  2496
+===================== ================================
 
 
 .. toctree::
