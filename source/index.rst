@@ -108,15 +108,9 @@ GPU Node
    Number of CUDA cores  2496
    ===================== ================================
 
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents
 
    system-overview
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
