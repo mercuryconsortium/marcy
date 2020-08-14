@@ -9,9 +9,9 @@ for the two most common cases are presented below.
 SSH on Mac OS X and UNIX
 ========================
 The most direct method is to connect directly from a command line terminal on a
-Mac OS X or UNIX computer. This is because Marcy operates the CentOS 6 UNIX operating
-system through a command line interface. Mac OS is built on UNIX, so has the command line
-terminal software built in. So, user with the account ``username`` working from a personal
+Mac OS X or UNIX computer. This is because Marcy operates the `CentOS 6 <https://www.centos.org>`_
+UNIX operating system through a command line interface. Mac OS is built on UNIX, so has the command
+line terminal software built in. So, user with the account ``username`` working from a personal
 computer ``localhost`` can connect to Marcy using the command
 
 .. code-block:: bash
