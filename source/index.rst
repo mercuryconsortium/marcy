@@ -22,7 +22,9 @@ disks.
 
 Login Node
 ----------
-
+   
+   ===================== ================================
+   Attribute             Value
    ===================== ================================
    Processors            Intel Broadwell E5-2660 2.20 GHz
    Number of processors  2
