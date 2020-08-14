@@ -5,5 +5,5 @@ Marcy is one of the `Molecular Education and Research Consortium in Undergraduat
 Chemistry <https://mercuryconsortium.org>`_ high-performance computing clusters (HPCs).
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Contents

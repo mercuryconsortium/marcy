@@ -6,7 +6,7 @@ protocol. This works differently on different operating systems, so we provide i
 two most common operating systems. 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Contents
 
    ssh-mac
