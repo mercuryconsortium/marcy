@@ -62,7 +62,7 @@ Compute Nodes
 =============
 Jobs submitted to the queue from the ``master`` node are sent to the proper compute nodes
 depending on the requested resources. Jobs with light, moderate, and heavy memory requirements
-are sent to the ``smallmem``, ``mediummem``, and ``bigmem`` nodes to carry out their
+are sent to the ``smallmem``, default, and ``bigmem`` nodes to carry out their
 calculations. Jobs running `CUDA <https://developer.nvidia.com/about-cuda>`_ code are sent to
 the ``gpu`` node.
 
@@ -70,7 +70,7 @@ Small Memory
 ------------
 
   ===================== ================================
-  smallmem              inode[9-21]
+  smallmem              ``inode[9-21]``
   ===================== ================================
   Processor             Intel Broadwell E5-2660 2.20 GHz
   Number of processors  2
@@ -85,7 +85,7 @@ Medium Memory
 -------------
 
   ===================== ================================
-  mediummem             inode[21,23-26]
+  default               ``inode[21,23-26]``
   ===================== ================================
   Processor             Intel Broadwell E5-2660 2.20 GHz
   Number of processors  2
@@ -100,7 +100,7 @@ Large Memory
 ------------
 
   ===================== ================================
-  bigmem                inode[1-8]
+  bigmem                ``inode[1-8]``
   ===================== ================================
   Processor             Intel Broadwell E5-2660 2.20 GHz
   Number of processors  2
@@ -115,7 +115,7 @@ CUDA
 ----
 
   ===================== ================================
-  gpu                   inode[22]
+  gpu                   ``inode[22]``
   ===================== ================================
   Processors            Intel Broadwell E5-2660 2.20 GHz
   Number of processors  2
