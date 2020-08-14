@@ -20,10 +20,15 @@ are submitted from the login node via `PBS <https://www.openpbs.org>`_ to the co
 The cluster's file system is located on the storage node in a large RAID array of hard
 disks.
 
+Login Node
+----------
+Users connect to Marcy by logging into the login node using `SSH <https://www.ssh.org>`_. This
+interactive session runs on the `TCSH <https://www.tcsh.org>`_ shell.
+
   ===================== ================================
-  Login Node            master
+  master                master
   ===================== ================================
-  Processors            Intel Broadwell E5-2660 2.20 GHz
+  Processor             Intel Broadwell E5-2660 2.20 GHz
   Number of processors  2
   Threads per processor 8
   Threads per node      16
@@ -31,12 +36,17 @@ disks.
   Memory per node       64 GB
   Disk space per node   2 TB
   ===================== ================================
-  
-.. |br| raw:: html
+
+Storage Node
+------------
+Marcy's file system is stored in a 27 TB `RAID <https://en.wikipedia.org/wiki/RAID>`_ array of
+hard disks on the storage node. This is where long-term storage of data is located. The file
+system is backed up weekly.
+
   ===================== ================================
-  Storage Node          io
+  io                    io
   ===================== ================================
-  Processors            Intel Broadwell E5-2660 2.20 GHz
+  Processor             Intel Broadwell E5-2660 2.20 GHz
   Number of processors  2
   Threads per processor 8
   Threads per node      16
@@ -44,12 +54,19 @@ disks.
   Memory per node       64 GB
   Disk space per node   20 TB
   ===================== ================================
-  
-  
+
+Compute Nodes
+-------------
+Jobs submitted to the queue from the ``master`` node are sent to the proper compute nodes
+depending on the requested resources. Jobs with light, moderate, and heavy memory requirements
+are sent to the ``smallmem``, ``mediummem``, and ``bigmem`` nodes to carry out their
+calculations. Jobs running `CUDA <https://developer.nvidia.com/about-cuda>`_ code are sent to
+the ``gpu`` node.
+
   ===================== ================================
-  Small Nodes           inode[9-21]
+  smallmem              inode[9-21]
   ===================== ================================
-  Processors            Intel Broadwell E5-2660 2.20 GHz
+  Processor             Intel Broadwell E5-2660 2.20 GHz
   Number of processors  2
   Threads per processor 8
   Threads per node      16
@@ -57,12 +74,11 @@ disks.
   Memory per node       32 GB
   Disk space per node   1 TB
   ===================== ================================
-  
-  
+
   ===================== ================================
-  Medium Nodes          inode[21,23-26]
+  mediummem             inode[21,23-26]
   ===================== ================================
-  Processors            Intel Broadwell E5-2660 2.20 GHz
+  Processor             Intel Broadwell E5-2660 2.20 GHz
   Number of processors  2
   Threads per processor 8
   Threads per node      16
@@ -70,12 +86,11 @@ disks.
   Memory per node       64 GB
   Disk space per node   1 TB
   ===================== ================================
-  
-  
+
   ===================== ================================
-  Big Nodes             inode[1-8]
+  bigmem                inode[1-8]
   ===================== ================================
-  Processors            Intel Broadwell E5-2660 2.20 GHz
+  Processor             Intel Broadwell E5-2660 2.20 GHz
   Number of processors  2
   Threads per processor 8
   Threads per node      16
@@ -83,10 +98,9 @@ disks.
   Memory per node       128 GB
   Disk space per node   2 TB
   ===================== ================================
-  
-  
+
   ===================== ================================
-  GPU Node              inode[22]
+  gpu                   inode[22]
   ===================== ================================
   Processors            Intel Broadwell E5-2660 2.20 GHz
   Number of processors  2
