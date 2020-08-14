@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>System Overview &#8212; Marcy User Guide 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Connecting to Marcy" href="connecting/index.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="connecting/index.html" title="Connecting to Marcy"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Marcy User Guide 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">System Overview</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="system-overview">
+<h1>System Overview<a class="headerlink" href="#system-overview" title="Permalink to this headline">¶</a></h1>
+<p>Marcy has 26 compute nodes grouped into queues based on their hardware configuration. Each node
+runs on a Linux operating system. Users
+connect to Marcy by logging into their account on the login node via <a class="reference external" href="https://www.ssh.com">SSH</a>. Jobs
+are submitted from the login node via <a class="reference external" href="https://www.openpbs.org">PBS</a> to the compute nodes.
+The cluster’s file system is located on the storage node in a large <a class="reference external" href="https://en.wikipedia.org/wiki/RAID">RAID</a>
+array of hard disks.</p>
+<div class="section" id="login-node">
+<h2>Login Node<a class="headerlink" href="#login-node" title="Permalink to this headline">¶</a></h2>
+<p>Users connect to Marcy by logging into the login node. This starts an
+interactive session running on the <a class="reference external" href="https://www.tcsh.org">TCSH</a> shell.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>master</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">master</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Processor</p></td>
+<td><p>Intel Broadwell E5-2660 2.20 GHz</p></td>
+</tr>
+<tr class="row-odd"><td><p>Number of processors</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Threads per processor</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-odd"><td><p>Threads per node</p></td>
+<td><p>16</p></td>
+</tr>
+<tr class="row-even"><td><p>Memory per processor</p></td>
+<td><p>4 GB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Memory per node</p></td>
+<td><p>64 GB</p></td>
+</tr>
+<tr class="row-even"><td><p>Disk space per node</p></td>
+<td><p>2 TB</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="storage-node">
+<h2>Storage Node<a class="headerlink" href="#storage-node" title="Permalink to this headline">¶</a></h2>
+<p>Marcy’s file system is stored in a 27 TB <a class="reference external" href="https://en.wikipedia.org/wiki/RAID">RAID</a> array of
+hard disks on the storage node.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>io</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">io</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Processor</p></td>
+<td><p>Intel Broadwell E5-2660 2.20 GHz</p></td>
+</tr>
+<tr class="row-odd"><td><p>Number of processors</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Threads per processor</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-odd"><td><p>Threads per node</p></td>
+<td><p>16</p></td>
+</tr>
+<tr class="row-even"><td><p>Memory per processor</p></td>
+<td><p>4 GB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Memory per node</p></td>
+<td><p>64 GB</p></td>
+</tr>
+<tr class="row-even"><td><p>Disk space per node</p></td>
+<td><p>20 TB</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="compute-nodes">
+<h2>Compute Nodes<a class="headerlink" href="#compute-nodes" title="Permalink to this headline">¶</a></h2>
+<p>Jobs submitted to the queue from the <code class="docutils literal notranslate"><span class="pre">master</span></code> node are sent to the proper compute nodes
+depending on the requested resources. Jobs with light, moderate, and heavy memory requirements
+are sent to the <code class="docutils literal notranslate"><span class="pre">smallmem</span></code>, default, and <code class="docutils literal notranslate"><span class="pre">bigmem</span></code> nodes to carry out their
+calculations. Jobs running <a class="reference external" href="https://developer.nvidia.com/about-cuda">CUDA</a> code are sent to
+the <code class="docutils literal notranslate"><span class="pre">gpu</span></code> node.</p>
+<div class="section" id="small-memory">
+<h3>Small Memory<a class="headerlink" href="#small-memory" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>smallmem</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">inode[9-21]</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Processor</p></td>
+<td><p>Intel Broadwell E5-2660 2.20 GHz</p></td>
+</tr>
+<tr class="row-odd"><td><p>Number of processors</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Threads per processor</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-odd"><td><p>Threads per node</p></td>
+<td><p>16</p></td>
+</tr>
+<tr class="row-even"><td><p>Memory per processor</p></td>
+<td><p>2 GB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Memory per node</p></td>
+<td><p>32 GB</p></td>
+</tr>
+<tr class="row-even"><td><p>Disk space per node</p></td>
+<td><p>1 TB</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="medium-memory">
+<h3>Medium Memory<a class="headerlink" href="#medium-memory" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>default</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">inode[21,23-26]</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Processor</p></td>
+<td><p>Intel Broadwell E5-2660 2.20 GHz</p></td>
+</tr>
+<tr class="row-odd"><td><p>Number of processors</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Threads per processor</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-odd"><td><p>Threads per node</p></td>
+<td><p>16</p></td>
+</tr>
+<tr class="row-even"><td><p>Memory per processor</p></td>
+<td><p>4 GB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Memory per node</p></td>
+<td><p>64 GB</p></td>
+</tr>
+<tr class="row-even"><td><p>Disk space per node</p></td>
+<td><p>1 TB</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="large-memory">
+<h3>Large Memory<a class="headerlink" href="#large-memory" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>bigmem</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">inode[1-8]</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Processor</p></td>
+<td><p>Intel Broadwell E5-2660 2.20 GHz</p></td>
+</tr>
+<tr class="row-odd"><td><p>Number of processors</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Threads per processor</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-odd"><td><p>Threads per node</p></td>
+<td><p>16</p></td>
+</tr>
+<tr class="row-even"><td><p>Memory per processor</p></td>
+<td><p>8 GB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Memory per node</p></td>
+<td><p>128 GB</p></td>
+</tr>
+<tr class="row-even"><td><p>Disk space per node</p></td>
+<td><p>2 TB</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="id2">
+<h3>CUDA<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>gpu</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">inode[22]</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Processors</p></td>
+<td><p>Intel Broadwell E5-2660 2.20 GHz</p></td>
+</tr>
+<tr class="row-odd"><td><p>Number of processors</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Threads per processor</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-odd"><td><p>Threads per node</p></td>
+<td><p>16</p></td>
+</tr>
+<tr class="row-even"><td><p>Memory per processor</p></td>
+<td><p>2 GB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Memory per node</p></td>
+<td><p>32 GB</p></td>
+</tr>
+<tr class="row-even"><td><p>Disk space per node</p></td>
+<td><p>1 TB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Graphics cards</p></td>
+<td><p>NVIDIA Tesla K20</p></td>
+</tr>
+<tr class="row-even"><td><p>Number of CUDA cores</p></td>
+<td><p>2496</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">System Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#login-node">Login Node</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#storage-node">Storage Node</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compute-nodes">Compute Nodes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="connecting/index.html">Connecting to Marcy</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="connecting/index.html" title="Connecting to Marcy"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Marcy User Guide 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">System Overview</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Tuguldur T. Odbadrakh.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.0.
+    </div>
+  </body>
+</html>

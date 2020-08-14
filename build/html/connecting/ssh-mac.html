@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSH on Mac OS X or Linux &#8212; Marcy User Guide 0.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SSH on Windows" href="ssh-win.html" />
+    <link rel="prev" title="Connecting to Marcy" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="ssh-win.html" title="SSH on Windows"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Connecting to Marcy"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Marcy User Guide 0.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Connecting to Marcy</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">SSH on Mac OS X or Linux</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ssh-on-mac-os-x-or-linux">
+<h1>SSH on Mac OS X or Linux<a class="headerlink" href="#ssh-on-mac-os-x-or-linux" title="Permalink to this headline">¶</a></h1>
+<p>Open a <a class="reference external" href="https://help.gnome.org/users/gnome-terminal/stable/">command line terminal</a>  on your local
+computer (<code class="docutils literal notranslate"><span class="pre">localhost</span></code>) and use the <code class="docutils literal notranslate"><span class="pre">ssh</span></code> command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>localhost$ ssh username@marcy.furman.edu
+</pre></div>
+</div>
+<div class="section" id="passwordless-ssh-on-mac-os">
+<h2>Passwordless SSH on Mac OS<a class="headerlink" href="#passwordless-ssh-on-mac-os" title="Permalink to this headline">¶</a></h2>
+<p>The user’s local SSH key must be installed on Marcy to allow passwordless SSH.</p>
+<div class="section" id="checking-for-a-previous-key">
+<h3>Checking for a Previous Key<a class="headerlink" href="#checking-for-a-previous-key" title="Permalink to this headline">¶</a></h3>
+<p>Open a command line terminal on your local computer (<code class="docutils literal notranslate"><span class="pre">localhost</span></code>) and list the home directory
+contents including hidden files/folders.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>localhost$ ls -al
+</pre></div>
+</div>
+<p>If the folder <code class="docutils literal notranslate"><span class="pre">.ssh</span></code> exists and contains the files <code class="docutils literal notranslate"><span class="pre">id_rsa</span></code> and <code class="docutils literal notranslate"><span class="pre">id_rsa.pub</span></code> a previously-generated
+SSH key exists and can be used. If the folder <code class="docutils literal notranslate"><span class="pre">.ssh</span></code> does NOT exist, the user must generate a new
+SSH key.</p>
+</div>
+<div class="section" id="generating-a-new-key">
+<h3>Generating a New Key<a class="headerlink" href="#generating-a-new-key" title="Permalink to this headline">¶</a></h3>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">ssh-keygen</span></code> command and accept the default configurations in the resulting prompts.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>localhost$ ssh-keygen
+</pre></div>
+</div>
+<p>This will create the folder <code class="docutils literal notranslate"><span class="pre">/Users/username/.ssh</span></code> which contain the files <code class="docutils literal notranslate"><span class="pre">id_rsa</span></code> and <code class="docutils literal notranslate"><span class="pre">id_rsa.pub</span></code>.</p>
+</div>
+<div class="section" id="installing-key-on-marcy">
+<h3>Installing Key on Marcy<a class="headerlink" href="#installing-key-on-marcy" title="Permalink to this headline">¶</a></h3>
+<p>Change directory to the <code class="docutils literal notranslate"><span class="pre">.ssh</span></code> folder.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>localhost$ <span class="nb">cd</span> /Users/username/.ssh
+</pre></div>
+</div>
+<p>Create a temporary <code class="docutils literal notranslate"><span class="pre">authorized_keys</span></code> file containing your public key.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>localhost$ cp id_rsa.pub temporary_authorized_keys
+</pre></div>
+</div>
+<p>Transfer the temporary file to Marcy.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>localhost$ scp temporary_authorized_keys username@marcy.furman.edu:/home/username/.ssh/authorized_keys
+</pre></div>
+</div>
+<p>This completes the SSH key installation and allows passwordless SSH and SCP.</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Table of Contents</a></h3>
+<p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system-overview.html">System Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Connecting to Marcy</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">SSH on Mac OS X or Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ssh-win.html">SSH on Windows</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="ssh-win.html" title="SSH on Windows"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Connecting to Marcy"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Marcy User Guide 0.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Connecting to Marcy</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">SSH on Mac OS X or Linux</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Tuguldur T. Odbadrakh.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.0.
+    </div>
+  </body>
+</html>
