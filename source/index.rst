@@ -3,14 +3,20 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Marcy User Guide's documentation!
-============================================
+================
+Marcy User Guide
+================
+
+Introduction
+============
+Marcy is one of the `Molecular Education and Research Consortium in Undergraduate Computational
+Chemistry <https://mercuryconsortium.org>`_ high-performance computing clusters (HPCs).
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents
 
-
+   system-overview
 
 Indices and tables
 ==================
