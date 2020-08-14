@@ -16,7 +16,6 @@ System Overview
 ===============
 Marcy has 26 compute nodes grouped into the following queues based on the hardware configuration.
 
-Login Node
 .. table:: Login Node
    :caption: master
 
@@ -30,7 +29,6 @@ Login Node
    Disk space per node   2 TB
    ===================== ================================
 
-Storage Node
 .. table:: Storage Node
    :caption: io
 
@@ -44,7 +42,6 @@ Storage Node
    Disk space per node   20 TB
    ===================== ================================
 
-Thin Nodes
 .. table:: Thin Nodes
    :caption: inode[9-20]
 
@@ -58,7 +55,6 @@ Thin Nodes
    Disk space per node   1 TB
    ===================== ================================
 
-Medium Nodes
 .. table:: Medium Nodes
    :caption: inode[21,23-26]
 
