@@ -16,7 +16,10 @@ System Overview
 ===============
 Marcy has 26 compute nodes grouped into the following queues based on the hardware configuration.
 
+Login Node
+----------
 .. table:: Login Node
+   :caption: master
 
    ===================== ================================
    Processors            Intel Broadwell E5-2660 2.20 GHz
@@ -26,6 +29,83 @@ Marcy has 26 compute nodes grouped into the following queues based on the hardwa
    Memory per processor  4 GB
    Memory per node       64 GB
    Disk space per node   2 TB
+   ===================== ================================
+
+Storage Node
+------------
+.. table:: Storage Node
+   :caption: io
+
+   ===================== ================================
+   Processors            Intel Broadwell E5-2660 2.20 GHz
+   Number of processors  2
+   Threads per processor 8
+   Threads per node      16
+   Memory per processor  4 GB
+   Memory per node       64 GB
+   Disk space per node   20 TB
+   ===================== ================================
+
+Thin Nodes
+----------
+.. table:: Thin Nodes
+   :caption: inode[9-20]
+
+   ===================== ================================
+   Processors            Intel Broadwell E5-2660 2.20 GHz
+   Number of processors  2
+   Threads per processor 8
+   Threads per node      16
+   Memory per processor  2 GB
+   Memory per node       32 GB
+   Disk space per node   1 TB
+   ===================== ================================
+
+Medium Nodes
+------------
+.. table:: Medium Nodes
+   :caption: inode[21,23-26]
+
+   ===================== ================================
+   Processors            Intel Broadwell E5-2660 2.20 GHz
+   Number of processors  2
+   Threads per processor 8
+   Threads per node      16
+   Memory per processor  4 GB
+   Memory per node       64 GB
+   Disk space per node   1 TB
+   ===================== ================================
+
+Big Nodes
+---------
+.. table:: Big Nodes
+   :caption: inode[1-8]
+
+   ===================== ================================
+   Processors            Intel Broadwell E5-2660 2.20 GHz
+   Number of processors  2
+   Threads per processor 8
+   Threads per node      16
+   Memory per processor  8 GB
+   Memory per node       128 GB
+   Disk space per node   2 TB
+   ===================== ================================
+
+GPU Node
+--------
+.. table:: GPU Node
+   :caption: inode[22]
+
+   ===================== ================================
+   Processors            Intel Broadwell E5-2660 2.20 GHz
+   Number of processors  2
+   Threads per processor 8
+   Threads per node      16
+   Memory per processor  2 GB
+   Memory per node       32 GB
+   Disk space per node   1 TB
+   Graphics cards        NVIDIA Tesla K20
+   Number of CUDA cores  2496
    ===================== ================================
 
 .. toctree::
