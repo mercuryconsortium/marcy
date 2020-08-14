@@ -31,6 +31,7 @@ Login Node
    Disk space per node   2 TB
    ===================== ================================
 
+
 .. table:: Storage Node
    :caption: io
 
@@ -43,6 +44,7 @@ Login Node
    Memory per node       64 GB
    Disk space per node   20 TB
    ===================== ================================
+
 
 .. table:: Thin Nodes
    :caption: inode[9-20]
@@ -57,6 +59,7 @@ Login Node
    Disk space per node   1 TB
    ===================== ================================
 
+
 .. table:: Medium Nodes
    :caption: inode[21,23-26]
 
@@ -70,6 +73,7 @@ Login Node
    Disk space per node   1 TB
    ===================== ================================
 
+
 .. table:: Big Nodes
    :caption: inode[1-8]
 
@@ -82,6 +86,7 @@ Login Node
    Memory per node       128 GB
    Disk space per node   2 TB
    ===================== ================================
+
 
 .. table:: GPU Node
    :caption: inode[22]
