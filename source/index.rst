@@ -13,7 +13,6 @@ hosted by the Molecular Education and Research Consortium in Undergraduate Compu
 .. toctree::
    :maxdepth: 2
    :caption: Contents
-   :numbered:
 
    introduction
    system-overview
