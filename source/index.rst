@@ -19,7 +19,7 @@ Marcy has 26 compute nodes grouped into the following queues based on the hardwa
 .. table:: Login Node
    :caption: master
 
-   ===================== ================================
+   --------------------- --------------------------------
    Processors            Intel Broadwell E5-2660 2.20 GHz
    Number of processors  2
    Threads per processor 8
@@ -27,7 +27,7 @@ Marcy has 26 compute nodes grouped into the following queues based on the hardwa
    Memory per processor  4 GB
    Memory per node       64 GB
    Disk space per node   2 TB
-   ===================== ================================
+   --------------------- --------------------------------
 
 .. table:: Storage Node
    :caption: io
