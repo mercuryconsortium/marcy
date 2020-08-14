@@ -14,7 +14,11 @@ Chemistry <https://mercuryconsortium.org>`_ high-performance computing clusters 
 
 System Overview
 ===============
-Marcy has 26 compute nodes grouped into the following queues based on the hardware configuration.
+Marcy has 26 compute nodes grouped into queues based on their hardware configuration. Users
+connect to Marcy by logging into the login node via `SSH <https://www.ssh.com>`_. Jobs
+are submitted from the login node via `PBS <https://www.openpbs.org>`_ to the compute nodes.
+The cluster's file system is located on the storage node in a large RAID array of hard
+disks.
 
 Login Node
 ----------
@@ -96,6 +100,8 @@ Large Nodes
    Disk space per node   2 TB
    ===================== ================================
 
+GPU Node
+--------
 
 .. table:: GPU Node
    :caption: inode[22]
