@@ -1,0 +1,61 @@
+CHANGES
+=======
+
+* toc
+* toc
+* toc
+* toc
+* changing font color
+* editing toc
+* completed connecting to marcy
+* reorganizing
+* completed passwordless ssh on mac
+* editing ssh
+* editing ssh
+* editing ssh
+* editing ssh
+* editing ssh
+* added ssh from mac and linux
+* added networking section
+* separated content into smaller files
+* separated content into smaller files
+* separated content into smaller files
+* separated content into smaller files
+* separated content into smaller files
+* prettied up system overview
+* prettied up system overview
+* prettied up system overview
+* nodes section complete
+* nodes section complete
+* fixed tables
+* fixed tables
+* fixed tables
+* new table format
+* added recommonmark extension
+* added recommonmark extension
+* added recommonmark extension
+* fixing tables
+* fixing tables
+* fixing tables
+* fixing tables
+* fixing tables
+* fixing tables
+* fixing tables
+* fixing tables
+* fixing tables
+* added the hardware configuration of each queue
+* added the hardware configuration of each queue
+* added the hardware configuration of each queue
+* added the hardware configuration of each queue
+* added the hardware configuration of each queue
+* adding tables
+* adding tables
+* edited system overview
+* added system overview
+* sphinxdoc theme
+* python\_docs\_theme
+* classic theme
+* traditional theme
+* added contents.rst
+* sphinx build
+* Initial commit
