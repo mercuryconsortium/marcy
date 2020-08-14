@@ -14,8 +14,19 @@ Chemistry <https://mercuryconsortium.org>`_ high-performance computing clusters 
 
 System Overview
 ===============
-Marcy has 26 compute nodes, each of which has two Intel Broadwell E5-2660 8-core CPUs for a total
-of 16 cores per node.
+Marcy has 26 compute nodes grouped into the following queues based on the hardware configuration.
+
+.. table:: Login Node
+
+   ========== ==================================
+   Processors Intel Broadwell E5-2660 2.20 GHz
+   Number of processors 2
+   Threads per processor 8
+   Threads per node 16
+   Memory per processor 4 GB
+   Memory per node 64 GB
+   Disk space per node 2 TB
+   ==== ===================   
 
 .. toctree::
    :maxdepth: 2
