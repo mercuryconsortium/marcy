@@ -17,7 +17,6 @@ System Overview
 Marcy has 26 compute nodes grouped into the following queues based on the hardware configuration.
 
 Login Node
-----------
 .. table:: Login Node
    :caption: master
 
@@ -32,7 +31,6 @@ Login Node
    ===================== ================================
 
 Storage Node
-------------
 .. table:: Storage Node
    :caption: io
 
@@ -47,7 +45,6 @@ Storage Node
    ===================== ================================
 
 Thin Nodes
-----------
 .. table:: Thin Nodes
    :caption: inode[9-20]
 
@@ -62,7 +59,6 @@ Thin Nodes
    ===================== ================================
 
 Medium Nodes
-------------
 .. table:: Medium Nodes
    :caption: inode[21,23-26]
 
