@@ -17,7 +17,7 @@ System Overview
 Marcy has 26 compute nodes grouped into the following queues based on the hardware configuration.
 
 Login Node
-^^^^^^^^^^
+==================
 .. table::
    :caption: master
 
