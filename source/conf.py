@@ -29,6 +29,7 @@ html_theme_options = {
     'sticky_navigation': True,
     'astropy_project_menubar': True
 }
+html_logo = ['furman-logo.jpg']
 html_css_files = ['style.css']
 html_static_path = ['_static']
 pygments_style = 'sphinx'
