@@ -1,2 +1,2 @@
 # marcy
-Marcy User Guide
+Marcy User Guide Sphinx document.
