@@ -16,6 +16,27 @@ h5 {
 h6 {
   color: #582C83;
 }
-a {
-  color: #582C23;
+
+a:link {
+  color: #582C83;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #582C83;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #582C83;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #582C83;
+  background-color: transparent;
+  text-decoration: none;
 }
