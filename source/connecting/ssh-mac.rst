@@ -83,8 +83,8 @@ called ``authorized_keys``. Then use ``scp`` to transfer the ``authorized_keys``
 .. code-block:: bash
 
     username@localhost:~$ cd /Users/username/.ssh/
-    username@localhost:~/.ssh$ cp id_rsa.pub authorized_keys
-    username@localhost:~/.ssh$ scp authorized_keys username@marcy.furman.edu:/home/username/.ssh/.
+    username@localhost:~$ cp id_rsa.pub authorized_keys
+    username@localhost:~$ scp authorized_keys username@marcy.furman.edu:/home/username/.ssh/.
     Password:
     authorized_keys                               100%  406    12.9KB/s   00:00
 
