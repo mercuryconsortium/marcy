@@ -31,7 +31,7 @@ Installing Keys
 Open a new command line terminal and log into Marcy.
 
 .. code-block:: bash
-    
+
     username@localhost:~$ ssh username@marcy.furman.edu
 
 Open a new file ``/home/username/.ssh/authorized_keys`` with any text edit program. For
