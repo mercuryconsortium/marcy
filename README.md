@@ -1,2 +1,3 @@
 # marcy
-Marcy User Guide
+
+Sphinx source code for the Marcy User Guide
