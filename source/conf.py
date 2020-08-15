@@ -32,4 +32,3 @@ html_theme_options = {
 html_logo = 'mercurylogo.gif'
 html_css_files = ['style.css']
 html_static_path = ['_static']
-pygments_style = 'sphinx'

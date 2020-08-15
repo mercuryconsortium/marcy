@@ -7,6 +7,9 @@ h2 {
 p {
   color: black;
 }
+a {
+  color: #582C83;
+}
 div.topbar a.brand {
     background: none;
     background-image: none;
@@ -15,10 +18,10 @@ div.topbar ul li a.homelink {
     background: none;
     background-image: none;
 }
-.header {
+div.header {
   background-color: #582C83;
   padding: 20px;
 }
-.sidenav {
+div.sidenav {
   background-color: white;
 }
