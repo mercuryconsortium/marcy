@@ -17,4 +17,4 @@ Chemistry (MERCURY).
 
    introduction
    system-overview
-   connecting/index
+   connecting
