@@ -1,13 +1,13 @@
-*******************
+===================
 Connecting to Marcy
-*******************
+===================
 Users connect to Marcy through a command line terminal using the `Secure Shell
 <https://www.ssh.org>`_ (SSH) protocol. This works differently on different
 operating systems, so we provide instructions for the two most common operating
 systems.
 
-Mac OS X or Linux
-=================
+Mac OS X
+========
 Open a
 `command line terminal <https://help.gnome.org/users/gnome-terminal/stable/>`_
 on your local computer (``localhost``) and use the ``ssh`` command.
@@ -83,6 +83,7 @@ username and password to gain access to Marcy.
 
 Passwordless SSH
 ----------------
+
 
 .. image:: puttygen.png
 

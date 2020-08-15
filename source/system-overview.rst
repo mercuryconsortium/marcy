@@ -1,12 +1,13 @@
-***************
+===============
 System Overview
-***************
-Marcy has 26 compute nodes grouped into queues based on their hardware configuration. Each node
-runs on a Linux operating system. Users
-connect to Marcy by logging into their account on the login node via `SSH <https://www.ssh.com>`_. Jobs
-are submitted from the login node via `PBS <https://www.openpbs.org>`_ to the compute nodes.
-The cluster's file system is located on the storage node in a large `RAID <https://en.wikipedia.org/wiki/RAID>`_
-array of hard disks.
+===============
+Marcy has 26 compute nodes grouped into queues based on their hardware
+configuration. Each node runs on a Linux operating system. Users connect to
+Marcy by logging into their account on the login node via
+`SSH <https://www.ssh.com>`_. Jobs are submitted from the login node via
+`PBS <https://www.openpbs.org>`_ to the compute nodes. The cluster's file system
+is located on the storage node in a large
+`RAID <https://en.wikipedia.org/wiki/RAID>`_ array of hard disks.
 
 Login Node
 ==========
@@ -27,9 +28,9 @@ interactive session running on the `TCSH <https://www.tcsh.org>`_ shell.
 
 Storage Node
 ============
-
-Marcy's file system is stored in a 27 TB `RAID <https://en.wikipedia.org/wiki/RAID>`_ array of
-hard disks on the storage node.
+Marcy's file system is stored in a 27 TB 
+`RAID <https://en.wikipedia.org/wiki/RAID>`_ array of hard disks on the storage
+node.
 
   ===================== ================================
   io                    ``io``
