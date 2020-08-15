@@ -38,7 +38,7 @@ Open a new file ``/home/username/.ssh/authorized_keys`` with any text edit progr
 `Vim <https:www.vim.org>`_, use the command:
 
 .. code-clock:: bash
-
+    
     username@localhost:~$ vim /home/username/.ssh/authorized_keys
 
 Press ``I`` to enter edit mode and paste your public key into the file. Exit edit mode by pressing
