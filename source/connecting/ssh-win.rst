@@ -41,6 +41,7 @@ Open a new file ``/home/username/.ssh/authorized_keys`` with any text edit progr
 
     username@localhost:~$ vim /home/username/.ssh/authorized_keys
 
+
 Press ``I`` to enter edit mode and paste your public key into the file. Exit edit mode by pressing
 `Esc`. Save the file and exit by typing ``:wq`` into the Vim command prompt and pressing `Enter`.
 This completes the SSH key installation.
