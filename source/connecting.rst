@@ -84,8 +84,8 @@ username and password to gain access to Marcy.
 Passwordless SSH
 ----------------
 
-
 .. image:: puttygen.png
+
 
 .. toctree::
    :maxdepth: 4
