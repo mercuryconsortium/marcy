@@ -14,7 +14,6 @@ Chemistry (MERCURY).
 
 .. toctree::
    :maxdepth: 4
-   :caption: Marcy 
 
    introduction
    system-overview

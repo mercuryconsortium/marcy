@@ -81,4 +81,3 @@ Passwordless SSH on Windows
 
 .. toctree::
    :maxdepth: 4
-   :caption: Marcy

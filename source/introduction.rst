@@ -7,4 +7,3 @@ Chemistry <https://mercuryconsortium.org>`_ high-performance computing clusters 
 
 .. toctree::
    :maxdepth: 4
-   :caption: Contents
