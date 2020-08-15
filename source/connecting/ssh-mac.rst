@@ -7,25 +7,6 @@ this, unless you have set up passwordless access.
 .. code-block:: bash
 
     username@localhost:~$ ssh username@marcy.furman.edu
-    Last login: Fri Aug 14 21:43:34 2020 from 10.101.80.1
-         +-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+
-         |    |M|A|R|C|Y| @       MERCURY Consortium    |
-         +-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-    Ganglia - 	http://marcy.furman.edu/ganglia/
-    WebMO - 	http://marcy.furman.edu/webmo.html	(mercuryuser:marcy)
-
-    UPDATES:
-
-    02/08/15 - NEW queue rules are implemented
-    See http://marcy.furman.edu/wiki/doku.php/start?&#running_calculations for details
-    If you submit to the 'mercury' queue requesting the necessary resources
-    (walltime=x:x:x, nodes=x:ppn=x, mem=xGB), the job will be routed to the best queue.
-
-    08/15/14 - Example runs and benchmarks are compiled at ~software_test
-      or online at http://marcy.furman.edu/~software_test
-
-    Send any support requests to support@mercuryconsortium.org
-    [username@master ~]%
 
 Passwordless SSH on Mac OS
 --------------------------
@@ -83,8 +64,8 @@ called ``authorized_keys``. Then use ``scp`` to transfer the ``authorized_keys``
 .. code-block:: bash
 
     username@localhost:~$ cd /Users/username/.ssh/
-    username@localhost:~/.ssh$ cp id_rsa.pub authorized_keys
-    username@localhost:~/.ssh$ scp authorized_keys username@marcy.furman.edu:/home/username/.ssh/.
+    username@localhost:~$ cp id_rsa.pub authorized_keys
+    username@localhost:~$ scp authorized_keys username@marcy.furman.edu:/home/username/.ssh/.
     Password:
     authorized_keys                               100%  406    12.9KB/s   00:00
 
