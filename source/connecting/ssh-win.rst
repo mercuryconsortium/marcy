@@ -37,7 +37,7 @@ Open a new command line terminal and log into Marcy.
 Open a new file ``/home/username/.ssh/authorized_keys`` with any text edit program. For
 `Vim <https:www.vim.org>`_, use the command:
 
-.. code-clock:: bash
+.. code-block:: bash
 
     username@localhost:~$ vim /home/username/.ssh/authorized_keys
 
