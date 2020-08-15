@@ -15,6 +15,6 @@ Computational Chemistry (MERCURY).
 .. toctree::
    :maxdepth: 4
 
-   introduction
+   about
    system-overview
    connecting
